@@ -1,0 +1,129 @@
+/* ===== Apple 风，圆润、居中、柔和阴影 ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 22px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    animation: fadeIn 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1d1d1f;
+}
+
+/* 输入框风格 */
+
+.input {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border: 1px solid #d2d2d7;
+    border-radius: 14px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+    background: #f9f9fb;
+}
+
+.input:focus {
+    border-color: #007aff;
+    background: #ffffff;
+}
+
+/* 按钮风格 */
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #007aff;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #0063d6;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    background: #e5e5ea;
+    color: #1d1d1f;
+    border: none;
+    border-radius: 18px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #d6d6db;
+}
+
+/* 任务列表 */
+
+.task-item {
+    padding: 14px;
+    background: #f9f9fb;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #e5e5ea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-name {
+    font-size: 16px;
+}
+
+.task-done {
+    color: #30d158;
+    font-weight: 600;
+}
+
+.task-undone {
+    color: #ff3b30;
+    font-weight: 600;
+}
+
+/* 动画 */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
