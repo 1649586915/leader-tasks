@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>班组长任务系统</title>
+
+    <!-- 苹果风圆润样式 -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Sheet API 脚本 -->
+    <script defer src="api.js"></script>
+
+    <!-- 导出 Excel 模块 -->
+    <script defer src="export.js"></script>
+
+    <!-- PWA 支持 -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 登录界面 -->
+        <div id="loginBox" class="card">
+            <h2 class="title">班组长任务系统</h2>
+
+            <input id="username" placeholder="请输入用户名" class="input" />
+            <input id="password" placeholder="请输入密码" type="password" class="input" />
+
+            <button onclick="login()" class="btn">登录</button>
+        </div>
+
+        <!-- 班组长任务界面 -->
+        <div id="taskPage" class="card hidden">
+            <h2 class="title">今日任务</h2>
+
+            <div id="taskList"></div>
+
+            <button onclick="logout()" class="btn-secondary">退出登录</button>
+        </div>
+
+    </div>
+</body>
+</html>
